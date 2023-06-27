@@ -1,0 +1,226 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+  }
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    color: #000000;
+    font-size: 18px;
+    background-color: #F2F2F2;
+}
+
+.hero {
+    background-image: url(../img/main-mountains.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-color: #000000;
+}
+
+.sending-mail1 {
+    background-image: url(../img/Subscribe1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-color: #ffffff;
+    height: 412px;
+}
+
+.advantages-home {
+    background-image: url(../img/home.svg);
+    background-repeat: no-repeat;
+    background-size: 75px 72px;
+    background-position: center center;
+    background-color: #ffffff;
+    padding: 1px;
+}
+
+.advantages-food {
+    background-image: url(../img/food.svg);
+    background-repeat: no-repeat;
+    background-size: 74px 70px;
+    background-position: center center;
+    background-color: #ffffff;
+    padding: 1px;
+}
+
+.advantages-present {
+    background-image: url(../img/present.svg);
+    background-repeat: no-repeat;
+    background-size: 64px 76px;
+    background-position: center center;
+    background-color: #ffffff;
+    padding: 1px;
+}
+
+.navigation-list {
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.botton-navigation {
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 400;
+    border-radius: 10%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #756157;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.button-search {
+    font-family: "PT Sans", sans-serif;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 400;
+    border-radius: 4%;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #756157;
+    text-transform: uppercase;
+    padding: 8px 50px;
+    display: inline-flex;
+}
+
+.tel-number {
+    font-family: "PT Sans", sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 100;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+
+}
+
+.field, .visually-hidden{
+    font-family: "PT Sans", sans-serif;
+}
+
+.attribute-filters {
+    background-image: url(../img/mountains-directory.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-color: #000000;
+}
+
+.breadcrumbs {
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.infrastructure-form {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.price {
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: capitalize;
+
+}
+/* Поставил насыщенность везде 400 ибо мне кажется, что будет слишком жирно, хотя на макете сделанно 700, Уточнить норм или исправлять?*/
+
+.text-price {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.button-price {
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #82B3D3;
+    padding: 8px 50px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.pagination-link {
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    background-color: #82B3D3 ;
+
+}
+
+.more-block {
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.block-favorites {
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.picture h3  {
+    font-family: "PT Sans", sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: capitalize;
+
+    color: #000000
+
+}
