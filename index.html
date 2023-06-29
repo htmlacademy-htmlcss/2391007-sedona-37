@@ -3,51 +3,55 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
       <nav class="navigation-header">
           <a href="index.html" class="main-menu">
-          <img src="images/logo-header.svg" alt="Логотип сайта Седоны" width="140" height="70.05">
+          <img src="img/logo-header.svg" alt="Логотип сайта Седоны" width="140" height="70.05">
           </a>
       <li class="navigation-item">
-        <a class="Main">Главная</a>
+        <a class="navigation-list">Главная</a>
       </li>
       <li class="navigation-item">
-        <a href="#" class="Sedona">О Седоне</a>
+        <a href="#" class="navigation-list">О Седоне</a>
       </li>
       <li class="navigation-item">
-        <a href="catalog.html" class="Hotel">Гостиницы</a>
+        <a href="catalog.html" class="navigation-list">Гостиницы</a>
       </li>
       </ul>
       <ul class="navigation-user">
         <li class="search">
           <a href="#" class="search">
-           <span class="visually-hidden">Поиск</span></a>
+            <img src="img/search.svg" alt="Поиск" width="20" height="20">
+          </a>
         </li>
         <li class="like">
           <a href="#" class="like">
-           <span class="visually-hidden">Понравилось</span></a>
+            <img src="img/like.svg" alt="Понравилось" width="20" height="20">
+          </a>
         </li>
-        <li class="button">
-          <a href="#" class="botton">Хочу сюда</a>
+        <li class="button-header">
+          <a href="#" class="botton-navigation">Хочу сюда</a>
         </li>
       </ul>
     </nav>
    </header>
    <main class="main-info">
+    <div class="hero">
     <h1 class="visually-hidden">Седона городок в Аризоне</h1>
-    <img src="images/main-mountains.jpg" alt="Горы Седоны городка в Аризоне" width="1200" height="485">
-    <img src="images/welcome.svg" alt="Добро пожаловать в Седону" width="458" height="352">
+    <img src="img/welcome.svg" alt="Добро пожаловать в Седону" width="458" height="352">
     <p> Седона — небольшой городок в Аризоне,
       заслуживающий большего!</p>
       <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+    </div>
     <section>
       <ul class="main-info">
         <li class="real-city">
         <H3>Настоящий городок</h3>
         <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-        <img src="images/real-town.jpg" alt="Дома в Аризоне" width="800" height="385">
+        <img src="img/real-town.jpg" alt="Дома в Аризоне" width="800" height="385">
         </li>
       </ul>
       <ul>
@@ -68,7 +72,7 @@
         <li class="devi-s-bridge">
         <h3> Там есть мост дьявола</h3>
         <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-        <img src="images/devil's-bridge.jpg" alt="Мост дьявола" width="800" height="385">
+        <img src="img/devil's-bridge.jpg" alt="Мост дьявола" width="800" height="385">
         </li>
       </ul>
       <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
@@ -76,19 +80,16 @@
     </section>
     <article class="ofer-list">
       <ul class="list-of-benefits">
-        <li class="advantages">
+        <li class="advantages-home">
           <h3>Жилье</h3>
-          <img src="images/home.svg" width="75" height="72">
           <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
         </li>
-        <li class="advantages">
+        <li class="advantages-food">
           <h3>Еда</h3>
-          <img src="images/food.svg" width="74" height="70">
           <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
         </li>
-        <li class="advantages">
+        <li class="advantages-present">
           <h3>Сувениры</h3>
-          <img src="images/present.svg" width="64" height="76">
           <p>Не только китайского, но и настоящего местного производства!</p>
         </li>
       </ul>
@@ -100,33 +101,32 @@
     </section>
    </main>
   <footer>
-    <section class="sending-mail">
-     <img src="images/Subscribe.jpg" alt="Горы седоны взгляд с высоты" width="1200" height="414.86">
+    <div class="sending-mail1">
      <h2>Подпишитесь на рассылку</h2>
      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
      <form class="sending-mail" action="https://echo.htmlacademy.ru/" method="post">
       <label for="mailing-list"></label>
       <input class="field" placeholder="Ваш e-mail" type="email" name="mailing-list" id="mailing-list" required>
-      <button class="button mailing-list" type="submit">
+      <button class="mailing-list" type="submit">
         <span class="visually-hidden">отправить</span>
       </button>
      </form>
-    </section>
+    </div>
     <div class="footer-social">
       <ul>
         <li>
           <a class="button" href="#">
-            <img src="images/vk.svg" width="24" height="14" alt="Вконтакте">
+            <img src="img/vk.svg" width="24" height="14" alt="Вконтакте">
           </a>
         </li>
         <li>
           <a class="button" href="#">
-            <img src="images/tg.svg" width="18" height="15.1" alt="Телеграм">
+            <img src="img/tg.svg" width="18" height="15.1" alt="Телеграм">
           </a>
         </li>
         <li>
           <a class="button" href="#">
-            <img src="images/youtube.svg" width="22" height="17" alt="Ютуб">
+            <img src="img/youtube.svg" width="22" height="17" alt="Ютуб">
           </a>
         </li>
       </ul>
@@ -134,7 +134,7 @@
     <div class="number-and-author">
        <a class="tel-number" href="tel:+78128121212">+7 (812)-812-12-12</a>
        <a href="https://htmlacademy.ru/profession/frontender" class="logo-html-academy">
-       <img src="images/HTML-Academy-logo.svg" alt="Логотип HTML Academy" width="114.9" height="32.9">
+        <img src="img/HTML-Academy-logo.svg" alt="Логотип HTML Academy" width="114.9" height="32.9">
       </a>
    </div>
   </footer>
