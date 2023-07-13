@@ -14,11 +14,22 @@
     font-display: swap;
 }
 
+
+
 body {
     font-family: "PT Sans", sans-serif;
     color: #000000;
     font-size: 18px;
     line-height: 24px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+html {
+    height: 100%;
     background-color: #F2F2F2;
 }
 
@@ -30,10 +41,77 @@ body {
     background-color: #000000;
 }
 
+.navigation-header {
+    display: flex;
+    margin: 0 auto;
+    width: 1200px;
+    background-color: #ffffff
+}
+
+.logo-header {
+    margin-left: 70px;
+}
+
+.welcome-sedona {
+    display: block;
+    margin: 0 auto;
+}
+
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+.navigation-user {
+    margin-left: auto;
+    max-width: 300px;
+}
+
+.navigation-item {
+    max-width: 400px;
+}
+
+.main-container {
+    flex-grow: 1;
+}
+
+.small-town {
+    background-color: #ffffff;
+}
+
+.small-town {
+    padding-top: 69px;
+    padding-bottom: 69px;
+    gap: 25px;
+}
+
+.more-sedona {
+    font-family: "PT Sans", sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 25px;
+}
+
+.reason {
+    font-family: "PT Sans", sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000;
+    margin: 0;
+}
+
+
 .sending-mail1 {
-    background-image: url(../img/Subscribe1.png);
+    background-image: url(../img/subscribe1.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: center center;
     background-color: #ffffff;
     height: 412px;
@@ -46,6 +124,8 @@ body {
     background-position: center center;
     background-color: #ffffff;
     padding: 1px;
+    border: 30px;
+    background-position: 50% 25%;
 }
 
 .advantages-food {
@@ -55,6 +135,7 @@ body {
     background-position: center center;
     background-color: #ffffff;
     padding: 1px;
+    background-position: 50% 25%;
 }
 
 .advantages-present {
@@ -64,6 +145,7 @@ body {
     background-position: center center;
     background-color: #ffffff;
     padding: 1px;
+    background-position: 50% 25%;
 }
 
 .navigation-list {
@@ -73,7 +155,6 @@ body {
     font-weight: 700;
     text-align: center;
     color: #000000;
-    background-color: #ffffff;
     text-transform: capitalize;
     text-decoration: none;
 }
@@ -91,20 +172,6 @@ body {
     text-transform: none;
 }
 
-.button-search {
-    font-family: "PT Sans", sans-serif;
-    font-size: 36px;
-    line-height: 40px;
-    font-weight: 400;
-    border-radius: 4%;
-    text-align: center;
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #756157;
-    text-transform: uppercase;
-    padding: 8px 50px;
-    display: inline-flex;
-}
 
 .tel-number {
     font-family: "PT Sans", sans-serif;
@@ -157,16 +224,6 @@ body {
     text-transform: capitalize;
 }
 
-.price {
-    font-family: "PT Sans", sans-serif;
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 400;
-    color: #ffffff;
-    text-transform: capitalize;
-
-}
-/* Поставил насыщенность везде 400 ибо мне кажется, что будет слишком жирно, хотя на макете сделанно 700, Уточнить норм или исправлять?*/
 
 .text-price {
     font-family: "PT Sans", sans-serif;
@@ -176,17 +233,35 @@ body {
     color: #ffffff;
 }
 
+
+
 .button-price {
     font-family: "PT Sans", sans-serif;
     font-size: 16px;
     line-height: 20px;
-    font-weight: 400;
+    font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
     background-color: #82B3D3;
     padding: 8px 50px;
     border-radius: 4px;
     text-align: center;
+}
+
+.button-price-two {
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 8px 50px;
+    border-radius: 4px;
+    text-align: center;
+    opacity: 0.5;
+    /* Уточнить как сделать кнопку все же. Получил эффект но не тот
+     */
+
 }
 
 .pagination-link {
@@ -223,7 +298,7 @@ body {
     text-transform: uppercase;
 }
 
-.picture h3  {
+.picture {
     font-family: "PT Sans", sans-serif;
     font-size: 24px;
     line-height: 28px;
@@ -233,4 +308,432 @@ body {
 
     color: #000000
 
+}
+
+
+/* Cетка преимуществ на главной */
+.main-info {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    padding: 0;
+
+}
+
+.real-city {
+    padding: 103px 85px;
+    margin: 0;
+    color: #ffffff;
+    background-color: #82B3D3;
+}
+
+.list-flex {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    padding: 0;
+
+}
+
+
+.small-area {
+    padding: 103px 85px;
+    margin: 0;
+    background-color: #83B3D31F;
+    flex-direction: column;
+}
+
+.perfect-road {
+    padding: 103px 85px;
+    margin: 0;
+    background-color: #83B3D333;
+    flex-direction: column;
+}
+
+.few-tourists {
+    padding: 103px 85px;
+    margin: 0;
+    background-color: #83B3D31F;
+    flex-direction: column;
+}
+
+.list-devi-s-bridge {
+    display: flex;
+    padding: 0;
+    flex-direction: 0;
+    max-width: 1200px;
+}
+
+.devi-s-bridge {
+    padding: 103px 85px;
+    margin: 0;
+    background-color: #82B3D3;
+    color: #ffffff;
+    flex-direction: column;
+}
+
+.text-revision {
+    text-align: center;
+    flex-direction: column;
+    line-height: 21px;
+    margin: 0;
+    margin-top: 60px;
+}
+
+.flex-header {
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+}
+
+/* контейнер под главной сеткой */
+.come-to-sedona {
+ background-color: #ffffff;
+ max-width: 1200px;
+ padding: 64px 0;
+}
+
+.header-come-to-sedona {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+}
+
+.p-come-to-sedona {
+text-align: center;
+flex-direction: column;
+font-size: 21px;
+line-height: 26px;
+margin: 0;
+margin-top: 20px;
+}
+
+/* ЕДА ЖИЛЬЕ СУВЕНИРЫ */
+.list-of-benefits {
+    display: flex;
+    padding: 0;
+    flex-direction: row;
+    max-width: 1200px;
+}
+
+.h-list-of-benefits {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0;
+    margin-top: 102px;
+
+}
+
+.p-list-of-benefits {
+    text-align: center;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 30px;
+
+}
+
+.advantages-home {
+    padding: 80px 85px;
+    background-color: #83B3D31F;
+
+}
+
+.advantages-food {
+    padding: 80px 85px;
+    background-color: #ffffff;
+
+}
+
+.advantages-present {
+    padding: 80px 85px;
+    background-color: #83B3D31F;
+
+}
+
+/* ПОИСК ОТЕЛЯ */
+.hotel-search {
+    padding: 96px 304px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.h-hotel-search {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.p-hotel-search {
+    text-align: center;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 54px ;
+}
+
+.button-search {
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    border-radius: 4%;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #756157;
+    text-transform: uppercase;
+    padding: 8px 50px;
+    display: inline-flex;
+    max-width: 376px;
+
+}
+
+.sending-mail1 {
+    display: flex;
+    text-align: center;
+    max-width: 1200px;
+}
+
+.text-subscribe {
+    margin: 96px 258px 104px;
+    width: 684px;
+    color: #ffffff;
+
+}
+
+.h-text-subscribe {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.p-text-subscribe {
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    line-height: 26px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 54px ;
+}
+
+/* КАК СДЕЛАТЬ КНОПКУ С ИНПУТОМ */
+
+/* ПОДВАЛ САЙТА */
+
+.footer-filling {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 70px 30px;
+    max-width: 1200px;
+    justify-content: space-between;
+}
+
+.list-footer-social {
+    display: flex ;
+
+}
+
+.button {
+    padding: 0 10px
+
+}
+
+.number {
+    padding: 5px 195px;
+}
+
+.autor {
+    width: 115px;
+}
+
+
+
+/* СТИЛЬ ДЛЯ КАТАЛОГА */
+
+.main-crumbs {
+    display: BLOCK;
+    color: #ffffff;
+    flex-direction: column;
+}
+
+.inner-header-title {
+    text-align: left;
+    text-transform: capitalize;
+    font-size: 60px;
+    line-height: 78px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.more-form {
+    display: flex;
+}
+
+.infrastructure-form {
+    border:0 none;
+}
+
+.infrastructure-form-list {
+    padding: 0;
+    margin: 0;
+}
+
+.infa {
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+
+}
+
+.infrastructure-items {
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
+
+.house-attributes {
+    border:0 none;
+}
+
+.house-attributes-list {
+    padding: 0;
+    margin: 0;
+}
+
+/* НУЖНО ЗАКИНУТЬ СТИЛЕЙ НА ФОРМЫ */
+
+.infa-home {
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: capitalize;
+
+
+}
+
+.infa-price {
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+/* КАТАЛОГ */
+.catalog-menu {
+    padding: 50px 70px 60px;
+    background-color: #ffffff;
+}
+
+/* ПОИСК ОТЕЛЯ */
+.hotels-found {
+    display: flex;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.hotels-found-h {
+    text-transform: uppercase;
+    margin-right: auto;
+}
+
+.hotels-found-ul {
+    margin-left: 62px;
+    display: flex;
+    list-style-type: none;
+}
+
+.filter-buttons {
+    padding: 12px 14px;
+    border: solid 4px #E5E5E5;
+    border-radius: 4px;
+    margin-left: 8px;
+}
+
+/* КАРТОЧКИ */
+
+.catalog-block-list {
+    display: flex;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.product-cards {
+    padding: 20;
+
+}
+
+.card-1 {
+    margin: 0 20px 20px 0;
+    padding: 20px;
+}
+
+.card-2 {
+    padding: 20px;
+}
+
+.card-3 {
+    margin: 0 0 20px 20px;
+    padding: 20px;
+}
+
+.pagination {
+    display: flex;
+}
+
+.pagination-item {
+    padding: 20px 20px;
+    background-color: #82B3D3;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+/* ФУТЕР КАТАЛОГА */
+
+.sending-mail {
+    display: flex;
+    text-align: center;
+    max-width: 1200px;
+
+
+}
+
+.text-subscribe {
+    margin: 96px 258px 104px;
+    width: 684px;
+    color: #000000;
+    background-color: #ffffff;
+
+}
+
+.footer-in-catalog {
+    background-color: #ffffff;
 }
