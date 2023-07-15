@@ -62,13 +62,23 @@ html {
     margin: 0 auto;
   }
 
+
+
 .navigation-user {
     margin-left: auto;
     max-width: 300px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
 }
+
 
 .navigation-item {
     max-width: 400px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
 }
 
 .main-container {
@@ -720,13 +730,14 @@ margin-top: 20px;
 
 .sending-mail {
     display: flex;
-    text-align: center;
+    /* text-align: center; */
+    margin: 0 auto;
     max-width: 1200px;
 
 
 }
 
-.text-subscribe {
+.text-subscribe1 {
     margin: 96px 258px 104px;
     width: 684px;
     color: #000000;
@@ -736,4 +747,8 @@ margin-top: 20px;
 
 .footer-in-catalog {
     background-color: #ffffff;
+}
+
+* {
+    outline: solid red 1px;
 }
