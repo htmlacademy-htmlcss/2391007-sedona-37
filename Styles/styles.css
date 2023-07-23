@@ -167,7 +167,6 @@ html {
     background-image: url(../img/home.svg);
     background-repeat: no-repeat;
     background-size: 75px 72px;
-    background-position: center center;
     background-color: #ffffff;
     padding: 1px;
     background-position: 50% 25%;
@@ -177,7 +176,6 @@ html {
     background-image: url(../img/food.svg);
     background-repeat: no-repeat;
     background-size: 74px 70px;
-    background-position: center center;
     background-color: #ffffff;
     padding: 1px;
     background-position: 50% 25%;
@@ -187,7 +185,6 @@ html {
     background-image: url(../img/present.svg);
     background-repeat: no-repeat;
     background-size: 64px 76px;
-    background-position: center center;
     background-color: #ffffff;
     padding: 1px;
     background-position: 50% 25%;
@@ -544,7 +541,6 @@ html {
     background-image: url(../img/line.svg);
     background-repeat: no-repeat;
     background-size: 60px 2px;
-    background-position: center center;
     background-position: 50% 100%;
 
 }
@@ -850,7 +846,6 @@ html {
     color: #ffffff;
     text-align: center;
     text-decoration: none;
-    background-color: #82B3D3;
 }
 
 .pagination-number-1 {
