@@ -4,7 +4,7 @@
     font-weight: 400;
     src: url("../fonts/ptsans-400.woff2") format("woff2");
     font-display: swap;
-  }
+}
 
 @font-face {
     font-family: "PT Sans";
@@ -30,6 +30,8 @@ body {
 
 html {
     height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     background-color: #F2F2F2;
 }
 
@@ -40,6 +42,7 @@ html {
     background-position: center center;
     background-color: #000000;
 }
+
 
 .navigation-header {
     display: flex;
@@ -55,30 +58,63 @@ html {
 .welcome-sedona {
     display: block;
     margin: 0 auto;
+    padding: 51px 371px 81px;
+
+
 }
 
 .page-container {
     width: 1200px;
     margin: 0 auto;
-  }
+}
 
 
 
 .navigation-user {
-    margin-left: auto;
-    max-width: 300px;
     padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: row;
+    margin-left: auto;
+    list-style-type: none;
+    margin-right: 70px;
+    align-self: center;
 }
 
+.search-link {
+    display: block;
+    height: 20px;
+    width: 20px;
+    padding: 22px 12px;
+}
 
-.navigation-item {
-    max-width: 400px;
+.like-link {
+    display: block;
+    height: 20px;
+    width: 20px;
+    padding: 22px 12px;
+}
+
+.navigation-menu {
+    display: flex;
     margin: 0;
     padding: 0;
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin-left: 168px;
+}
+
+.main-menu {
     display: flex;
-    flex-direction: row;
+}
+
+.logo-nav {
+    position: absolute;
+}
+
+.navigation-list {
+    display: block;
+    padding: 20px 16px;
 }
 
 .main-container {
@@ -134,7 +170,6 @@ html {
     background-position: center center;
     background-color: #ffffff;
     padding: 1px;
-    border: 30px;
     background-position: 50% 25%;
 }
 
@@ -169,17 +204,23 @@ html {
     text-decoration: none;
 }
 
-.botton-navigation {
+.button-header{
+    align-self: center;
+}
+
+.button-navigation {
     font-family: "PT Sans", sans-serif;
     font-size: 20px;
     line-height: 22px;
     font-weight: 400;
-    border-radius: 10%;
+    border-radius: 4px;
     text-align: center;
     color: #ffffff;
     background-color: #756157;
     text-decoration: none;
     text-transform: none;
+    padding: 8px 34px;
+    margin-left: 20px;
 }
 
 
@@ -194,7 +235,8 @@ html {
 
 }
 
-.field, .visually-hidden{
+.field,
+.visually-hidden {
     font-family: "PT Sans", sans-serif;
 }
 
@@ -214,6 +256,20 @@ html {
     color: #ffffff;
     text-transform: capitalize;
     text-decoration: none;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumbs-items {
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+.svg-breadcrumbs {
+    padding-right: 10px;
 }
 
 .infrastructure-form {
@@ -274,17 +330,6 @@ html {
 
 }
 
-.pagination-link {
-    font-family: "PT Sans", sans-serif;
-    font-size: 20px;
-    line-height: 36px;
-    font-weight: 700;
-    color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-    background-color: #82B3D3 ;
-
-}
 
 .more-block {
     font-family: "PT Sans", sans-serif;
@@ -315,9 +360,7 @@ html {
     font-weight: 700;
     text-decoration: none;
     text-transform: capitalize;
-
-    color: #000000
-
+    color: #000000;
 }
 
 
@@ -327,6 +370,7 @@ html {
     flex-direction: row;
     max-width: 1200px;
     padding: 0;
+    margin: 0;
 
 }
 
@@ -342,6 +386,8 @@ html {
     flex-direction: row;
     max-width: 1200px;
     padding: 0;
+    margin: 0;
+    list-style-type: none;
 
 }
 
@@ -351,6 +397,8 @@ html {
     margin: 0;
     background-color: #83B3D31F;
     flex-direction: column;
+    min-width: 230px;
+    min-height: 160px;
 }
 
 .perfect-road {
@@ -358,6 +406,8 @@ html {
     margin: 0;
     background-color: #83B3D333;
     flex-direction: column;
+    min-width: 230px;
+    min-height: 160px;
 }
 
 .few-tourists {
@@ -365,13 +415,17 @@ html {
     margin: 0;
     background-color: #83B3D31F;
     flex-direction: column;
+    min-width: 230px;
+    min-height: 160px;
 }
 
 .list-devi-s-bridge {
     display: flex;
     padding: 0;
+    margin: 0;
     flex-direction: 0;
     max-width: 1200px;
+
 }
 
 .devi-s-bridge {
@@ -387,7 +441,7 @@ html {
     flex-direction: column;
     line-height: 21px;
     margin: 0;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .flex-header {
@@ -397,13 +451,26 @@ html {
     font-weight: 700;
     text-align: center;
     margin: 0;
+    padding-bottom: 30px;
+}
+
+.real-city-picture {
+    display: block;
+}
+
+.picture-devi-s-bridge {
+    display: block;
+}
+
+.li-devi-s-bridge {
+    list-style-type: none;
 }
 
 /* контейнер под главной сеткой */
 .come-to-sedona {
- background-color: #ffffff;
- max-width: 1200px;
- padding: 64px 0;
+    background-color: #ffffff;
+    max-width: 1200px;
+    padding: 64px 0;
 }
 
 .header-come-to-sedona {
@@ -416,12 +483,12 @@ html {
 }
 
 .p-come-to-sedona {
-text-align: center;
-flex-direction: column;
-font-size: 21px;
-line-height: 26px;
-margin: 0;
-margin-top: 20px;
+    text-align: center;
+    flex-direction: column;
+    font-size: 21px;
+    line-height: 26px;
+    margin: 0;
+    margin-top: 20px;
 }
 
 /* ЕДА ЖИЛЬЕ СУВЕНИРЫ */
@@ -430,6 +497,8 @@ margin-top: 20px;
     padding: 0;
     flex-direction: row;
     max-width: 1200px;
+    list-style-type: none;
+    margin: 0;
 }
 
 .h-list-of-benefits {
@@ -470,6 +539,16 @@ margin-top: 20px;
 
 }
 
+
+.a-line {
+    background-image: url(../img/line.svg);
+    background-repeat: no-repeat;
+    background-size: 60px 2px;
+    background-position: center center;
+    background-position: 50% 100%;
+
+}
+
 /* ПОИСК ОТЕЛЯ */
 .hotel-search {
     padding: 96px 304px;
@@ -493,7 +572,7 @@ margin-top: 20px;
     line-height: 26px;
     font-weight: 400;
     margin: 0;
-    margin-bottom: 54px ;
+    margin-bottom: 54px;
 }
 
 .button-search {
@@ -501,7 +580,7 @@ margin-top: 20px;
     font-size: 20px;
     line-height: 36px;
     font-weight: 700;
-    border-radius: 4%;
+    border-radius: 4px;
     text-align: center;
     text-decoration: none;
     color: #ffffff;
@@ -543,28 +622,46 @@ margin-top: 20px;
     line-height: 26px;
     font-weight: 400;
     margin: 0;
-    margin-bottom: 54px ;
+    margin-bottom: 54px;
 }
 
 /* КАК СДЕЛАТЬ КНОПКУ С ИНПУТОМ */
 
 /* ПОДВАЛ САЙТА */
 
+
 .footer-filling {
     display: flex;
     flex-direction: row;
     padding: 40px 70px 30px;
     max-width: 1200px;
+    max-height: 50px;
     justify-content: space-between;
 }
 
+.footer-social {
+    align-self: center;
+}
+
 .list-footer-social {
-    display: flex ;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-link {
+    display: flex;
+    min-width: 47px;
+    justify-content: center;
+    align-self: center;
 
 }
 
-.button {
-    padding: 0 10px
+
+.link-social {
+    display: block;
+    margin: 10px;
 
 }
 
@@ -574,6 +671,7 @@ margin-top: 20px;
 
 .autor {
     width: 115px;
+    align-self: center;
 }
 
 
@@ -600,7 +698,7 @@ margin-top: 20px;
 }
 
 .infrastructure-form {
-    border:0 none;
+    border: 0 none;
 }
 
 .infrastructure-form-list {
@@ -626,7 +724,7 @@ margin-top: 20px;
 
 
 .house-attributes {
-    border:0 none;
+    border: 0 none;
 }
 
 .house-attributes-list {
@@ -667,17 +765,20 @@ margin-top: 20px;
     display: flex;
     margin: 0;
     margin-bottom: 40px;
+    max-height: 50px;
 }
 
 .hotels-found-h {
     text-transform: uppercase;
     margin-right: auto;
+    align-self: center;
 }
 
 .hotels-found-ul {
     margin-left: 62px;
     display: flex;
     list-style-type: none;
+    align-self: center;
 }
 
 .filter-buttons {
@@ -685,52 +786,113 @@ margin-top: 20px;
     border: solid 4px #E5E5E5;
     border-radius: 4px;
     margin-left: 8px;
+    display: flex;
+
 }
 
 /* КАРТОЧКИ */
+
+.catalog-block {
+    padding-bottom: 20px;
+    border-bottom: solid 2px #f2f2f2;
+}
 
 .catalog-block-list {
     display: flex;
     max-width: 1200px;
     flex-wrap: wrap;
-    padding-left: 0;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
 }
 
-.product-cards {
-    padding: 20;
-
-}
-
-.card-1 {
-    margin: 0 20px 20px 0;
+.card {
+    width: 300px;
     padding: 20px;
+    margin-right: 14px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #E6E6E6;
 }
 
-.card-2 {
-    padding: 20px;
-}
+.card:nth-child(3n) {
+    margin-right: 0;
+    }
 
-.card-3 {
-    margin: 0 0 20px 20px;
-    padding: 20px;
+
+
+    /* ПАГИНАЦИЯ  */
+
+.pagination-container {
+    margin-top: 40px;
 }
 
 .pagination {
     display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
-.pagination-item {
-    padding: 20px 20px;
+.pagination-link {
     background-color: #82B3D3;
     border-radius: 4px;
     margin-right: 8px;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    background-color: #82B3D3;
 }
+
+.pagination-number-1 {
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    margin-right: 8px;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+}
+
+.pagination-plug {
+
+    border-radius: 4px;
+    margin-right: 8px;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* ФУТЕР КАТАЛОГА */
 
 .sending-mail {
     display: flex;
-    /* text-align: center; */
     margin: 0 auto;
     max-width: 1200px;
 
@@ -749,6 +911,13 @@ margin-top: 20px;
     background-color: #ffffff;
 }
 
-* {
-    outline: solid red 1px;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
